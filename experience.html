@@ -1,0 +1,295 @@
+<html>
+<head>
+  <title>Layout Experience</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #5d6d7e;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: rgba(46, 64, 83);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Navigation Styling */
+    nav {
+      background: rgba(46, 64, 83);
+      width: 100%;
+      overflow: auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      text-align: center;
+      background:rgba(46, 64, 83);
+      font-size: 17px;
+      color: white;
+      padding: 20px 10px;
+      font-family: Arial;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: skyblue;
+      color: black;
+    }
+
+    /* Gallery Section Styling */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #f2f2f2;
+      overflow: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto; /* Enables horizontal scrolling */
+    }
+
+    .gallery {
+      margin: 5px;
+      border: 10px solid #ccc;
+      flex-shrink: 0; /* Prevents shrinking of images */
+      width: 390px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      padding: 10px;
+      font-size: 17px;
+      font-weight: bold;
+      text-align: center;
+      background: #584848;
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    /* Marquee Styling */
+    marquee {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Background Sound (Autoplay) -->
+  <audio autoplay loop>
+    <source src="SOURCE/SEE YOU AGAIN.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Header -->
+  <header>
+    <h1>MY DIPLOMA JOURNEY</h1>
+    
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gallery Section -->
+  <div class="container">
+    <div class="gallery">
+      <img src="SOURCE/MDS.jpg">
+      <div class="desc"><b>MDS</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/CLASS A FIRST PHOTO.jpg">
+      <div class="desc"><b>CLASS A FIRST PHOTO</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/PERKOM KO 2022.jpg">
+      <div class="desc"><b>FIRST PERKOM</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/UNRS 2.0.jpg">
+      <div class="desc"><b>UNI-NATURE RUN@SEGAMAT</b><i>(FIRST RUNNING EVENT AT UNIVERSITY)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/LIBK 37.jpg">
+      <div class="desc"><b>LATIHAN INTENSIF BAKAL KOMANDER (LIBK)</b> <i> UNFORGETTABLE MEMORIES. BANYAK PAHIT MANIS.</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/AGM MPKK SEM 2.jpg">
+      <div class="desc"><b>FIRST AGM MPKK AS A JUNIOR</b><i>(BECOME IC DEWAN)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/AGM BRIGED 1.jpg">
+      <div class="desc"><b>FIRST AGM BRIGED SUKARELAWAN</b> <i>(Perform an acting performance)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/MINI PERKOM 1.jpg">
+      <div class="desc"><b>MINI PERKOM KO 2023</b> <i>(first PERKOM as a Komander)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/MERDEKA 65.jpg">
+      <div class="desc"><b>SAMBUTAN KEMERDEKAAN KE-66</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/KKEC 11.jpg">
+      <div class="desc"><b>KOMANDER KESATRIA ENDURANCE CHALLENGE SIRI-11</b> <i>(MY FIRST KKEC)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/KRK.jpg">
+      <div class="desc"><b>KENAIKAN PANGKAT KE KOMANDER RENDAH KANAN(KRK)</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/AGM BRIGED 2.jpg">
+      <div class="desc"><b>AGM BRIGED SEM 3</b> <i>(DOING A GIMMICK AS AGENT)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/MYO.jpg">
+      <div class="desc"><b>MY-ORIENTEERING</b> <i>(FIRST INTERNATIONAL EVENT)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/ESKEP2023.jpg">
+      <div class="desc"><b>ESKEP 2023</b> <i>(FIRST EXPERIENCE FOR ESKEP)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/DINNERBRAVO.jpg">
+      <div class="desc"><b>DINNER KOMPENI BRAVO</b> <i>(MASQUERADE THEME)</i></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/UNRS 3.0.jpg">
+      <div class="desc"><b>UNI-NATURE RUN@SEGAMAT 3.0</b>  <i>(THIS TIME JOIN AS A CREW)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/KAYAK 2.jpg">
+      <div class="desc"><b>REDTMA@KAYAK, ROCK CLIMBING & FLYING FOX</b></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/LAST CLASS S3.jpg">
+      <div class="desc"><b>LAST CLASS FOR THIRD SEMESTER</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/SEM 3 LASTPAPER.jpg">
+      <div class="desc"><b>LAST PAPER FOR THIRD SEMESTER</b></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/LIBK38.jpg">
+      <div class="desc"><b>LATIHAN INTENSIF BAKAL KOMANDER SIRI-38</b>  <i>(JOIN AS FACILITATOR)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 17.jpg">
+      <div class="desc"><b>PENTAULIAHAN LEFTENAN MUDA KESATRIA SIRI-19</b>  <i>(MY SENIOR BATCH 36 PENTAULIAHAN)</i></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/SEM4.jpg">
+      <div class="desc"><b>FIRST CLASS OF 4th SEMESTER</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/HUTK48.jpg">
+      <div class="desc"><b>HARI ULANG TAHUN KESATRIA KE-48</b></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/MMB.jpg">
+      <div class="desc"><b>MAKAN MALAM BATALION VI</b>  <i>(EATING DURIAN TOGETHER)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/UW.jpg">
+      <div class="desc"><b>ENT PRESENTATION WITH UNDERWEIGHT GROUP</b></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/SEM4LAST.jpg">
+      <div class="desc"><b>LAST CLASS OF 4th SEMESTER</b></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/INTERN.jpg">
+      <div class="desc"><b>INTERN</b>  <i>(DOING MY INTERNSHIP AT UNIT KORPORAT UiTM JOHOR. GOT MANY EXPERIENCE AND KNOWLEDGE IN CORPORATE PROTOCOL AND MULTIMEDIA)</i></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/UMBC.jpg">
+      <div class="desc"><b>UiTM MARCHING BAND COMPETITION (UMBC)</b> <i>BECOME A CREW, ALSO GOT A JOB DURING MY INTERN</i></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/MERDEKA 66.jpg">
+      <div class="desc"><b>SAMBUTAN KEMERDEKAAN KE-67</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/KKEC 12.jpg">
+      <div class="desc"><b>KOMANDER KESATRIA ENDURANCE CHALLENGE SIRI-12</b>  <i>(MY LAST KKEC, COULDN'T JOIN AS ATHLETE BECAUSE OF INTERN)</i></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/HARI SUKAN NEGARA.jpg">
+      <div class="desc"><b>HARI SUKAN NEGARA</b></div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/AGM MPKK LAST.jpg">
+      <div class="desc"><b>AGM MPKK</b>  <i>(LAST AGM AS TPM)</i></div>
+    </div>
+<div class="gallery">
+      <img src="SOURCE/MKU.jpg">
+      <div class="desc"><b>MAJLIS KECEMERLANGAN UNIVERSITI</b></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    LIFE IS A JOURNEY, NOT A DESTINATION
+  </footer>
+
+<script>
+    // Auto-scroll logic
+    const galleryContainer = document.getElementById('galleryContainer');
+    let scrollAmount = 0;
+
+    function autoScrollGallery() {
+      galleryContainer.scrollLeft += 2; // Scroll pixels per frame
+      scrollAmount += 2;
+
+      // Reset to start if scrolled to the end
+      if (scrollAmount >= galleryContainer.scrollWidth - galleryContainer.clientWidth) {
+        scrollAmount = 0;
+        galleryContainer.scrollLeft = 0;
+      }
+
+      requestAnimationFrame(autoScrollGallery);
+    }
+
+    // Start the scrolling
+    autoScrollGallery();
+  </script>
+
+</body>
+</html>

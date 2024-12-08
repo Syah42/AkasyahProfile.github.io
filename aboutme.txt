@@ -1,0 +1,311 @@
+<html>
+<head>
+    <title>aboutme</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #b2babb; /* Updated background color */
+        }
+
+        header {
+            background-color: rgba(46, 64, 83); 
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff7f50; 
+            transform: scale(1.1); 
+        }
+
+        h1, h3 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+
+        /* About Me Box Styling */
+        .about-me-box {
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ensure responsive image */
+        .family-image {
+            width: 100%; /* Make it responsive */
+            height: auto;
+            max-width: 800px; /* Set a max-width */
+        }
+
+        /* Clock Styling */
+        .clock {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center; /* Center align the clock */
+        }
+
+    /* Hobbies Table Styling */
+    .hobbies-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .hobbies-table th, 
+    .hobbies-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .hobbies-table th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .hobby-img {
+        display: block;
+        width: 100%; /* Adjust width to fit table cell */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 150px; /* Optional: Set max width */
+    }
+   
+    </style>
+
+    <script>
+        // Function to update the clock every second
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var time = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').textContent = time;
+        }
+
+        // Update the clock every 1000 milliseconds (1 second)
+        setInterval(updateClock, 1000);
+
+        // Initialize clock
+        window.onload = updateClock;
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="experience.html">Experience</a>
+        </nav>
+    </header>
+
+    <!-- Clock Display -->
+    <div class="clock" id="clock"></div>
+
+    <!-- About Me Section with Border -->
+    <h1>About Me</h1>
+    <div class="about-me-box">
+        <p>Hello! My name is Akasyah. I am a passionate individual with a strong love for both sports and multimedia. Running and volleyball are my go-to activities, where I find physical challenges, mental clarity, and a sense of accomplishment. The thrill of competing, pushing my limits, and being part of a team fuels my enthusiasm for these sports. Alongside my athletic pursuits, I have a deep interest in the creative world of multimedia. Whether it's editing videos, coding websites, or capturing moments through photography, I enjoy expressing myself through different forms of media. Combining my passion for sports with my creative skills, I strive to continually learn and grow, both on the field and behind the screen.</p>
+    </div>
+
+   
+
+    <!-- Biodata Section -->
+    <section>
+        <div class="text-box">
+        <h2 style="background-color: 2px solid #4CAF50; padding: 10px; color: white;"><li><i>BIODATA</i></li></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Information</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Muhammad Danial Akasyah Bin Mohd Ali</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>No. Identification Card</td>
+                    <td>041224-01-0613</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Place of Birth</td>
+                    <td>Hospital Sultanah Aminah</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>24 December 2004</td>
+                </tr>
+                <tr>
+                    <td>Home Address</td>
+                    <td>Lot 1011, KM18, Kampung Mawai Baru, 81900 Kota Tinggi, Johor</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <td>Language Spoken</td>
+                    <td>Bahasa Melayu, English</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<section id="my-hobbie">
+    <div class="text-box">
+        <h2 style="background-color: 2px solid #4CAF50; padding: 10px; color: white;"><li><i>MY HOBBIES</i></li></h2>
+        <p>Here, I will share about my hobbies and things I love to do in my free time!
+</p>
+       
+<table class="hobbies-table">
+
+    <thead>
+        <tr>
+             <th>Hobby</th>
+            <th>Image</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Running</td>
+            <td><img src="SOURCE/Running.jpg" alt="Reading" class="hobby-img"></td>
+            <td>I developed an interest in running since HighSchool. But at that time i just run for fun and sometimes got to represent my school. After i enrolled in UiTM Segamat, I become more interested in Running because of many running event is held here. Also after join Komander, my stamina and endurance is increasing because it has become my daily routine to run everyday.</td>
+        </tr>
+        <tr>
+            <td>Watching Anime</td>
+            <td><img src="SOURCE/OnePiece.jpg" alt="Anime" class="hobby-img"></td>
+            <td>I Love to watch anime and cartoon since childhood and i guess my first anime is Doraemon or Shinchan. During Form 1 I suddenly want to rewatch One Piece as it feel Nostalgia, because i used to watch One Piece at Astro Ceria, but then i stop because they didn't show it again, then i realised One Piece has already 800+ Episode, but suprisingly i can catch up. Then I developed an interest in watching anime until now. Even though the plot for new anime is predictable and keep repeating the same idea, but i guess it fine because im bored. This is some of my Favourite Anime:<br>
+<ol type="1">
+  <li>One piece</li>
+  <li>Attack On Titan</li>
+  <li>That time I got reincarnated as a slime</li>
+  <li>Naruto</li>
+  <li>Demon Slayer</li>
+</ol>
+</td>
+        </tr>
+        <tr>
+            <td>Video Game</td>
+            <td><img src="SOURCE/ML.jpg" alt="Cooking" class="hobby-img"></td>
+            <td>Everyone love Video Game especially teenager, it one of the stress relieve and effective method to counter boredness. but sometime it can also triggered stress if we keep losing the game. But what make it enjoyable is the PVP which is we can play with friend. There also storyrich game, which focus on beating the game story mode. These are some of my favourite Game:<br>  
+<ul type="1">
+  <li>Mobile Legend</li>
+  <li>Valorant</li>
+  <li>Elden Ring</li>
+  <li>Call Of Duty</li>
+  <li>PUGB Mobile</li>
+</ul>
+</td>
+     
+  </tr>
+    </tbody>
+</table>
+</section>
+    </div>
+    <!-- Family Section -->
+    <section>
+        <center><h3>My Family</h3></center>
+        <center><p>Here are my family members. Click on their pictures to know more about them!</p></center>
+
+        <!-- Family Image with Image Map -->
+        <center><img src="SOURCE/family.jpg" alt="Family Picture" usemap="#familymap" class="family-image"></center>
+
+        <map name="familymap">
+            <area shape="rect" coords="170,50,420,200" href="father.html" alt="Father" title="Father">
+            <area shape="rect" coords="370,210,320,560" href="mother.html" alt="Mother" title="Mother">
+            <area shape="rect" coords="50,50,200,200" href="brother.html" alt="Brother" title="Brother">
+            <area shape="rect" coords="50,210,200,360" href="sister.html" alt="Sister" title="Sister">
+            <area shape="rect" coords="370,210,520,360" href="littlebrother.html" alt="Little Brother" title="Little Brother">
+            <area shape="rect" coords="210,210,360,360" href="littlesister.html" alt="Little Sister" title="Little Sister">
+        </map>
+
+    </section>
+
+	<center><h3>My Favourite Song</h3></center>
+        
+<section id="my-fav-song">
+    <div style="text-align: center; margin-top: 30px;">
+        <div style="
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        ">
+            <a href="lagu.html" target="_blank" style="
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #4CAF50;
+            ">CLICK HERE</a>
+        </div>
+    </div>
+</section>
+  </div>
+
+ <p><a href="index.html">Back to Home</a></p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kasyah's Portfolio</p>
+    </footer>
+</body>
+</html>

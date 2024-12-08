@@ -1,0 +1,228 @@
+<html>
+<head>
+  <title>Website Layout with Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #5d6d7e;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: rgba(46, 64, 83);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Navigation Styling */
+    nav {
+      background: rgba(46, 64, 83);
+      width: 100%;
+      overflow: auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      text-align: center;
+      background:rgba(46, 64, 83);
+      font-size: 17px;
+      color: white;
+      padding: 20px 10px;
+      font-family: Arial;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: skyblue;
+      color: black;
+    }
+
+    /* Gallery Section Styling */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #f2f2f2;
+      overflow: auto;
+      padding: 20px;
+    }
+
+    .gallery {
+      margin: 5px;
+      border: 10px solid #ccc;
+      float: left;
+      width: 390px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      padding: 10px;
+      font-size: 17px;
+      font-weight: bold;
+      text-align: center;
+      background: #584848;
+      color: white;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>WELCOME TO MY GALLERY</h1>
+    <marquee width="100%" bgcolor="#2e86c1">KELAS A & BATCH - 37 <3 </marquee>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+
+  <!-- Song (Audio Player) -->
+  <div class="audio-player" style="text-align: center; margin: 20px 0;">
+    <audio controls>
+      <source src="SOUND/POLAROID.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="container">
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 3.jpg">
+      <div class="desc">SEM 2</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 7.jpg">
+      <div class="desc">White&Creame class theme</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 8.jpg">
+      <div class="desc">Photographer OnTOP</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 12.jpg">
+      <div class="desc">MISI : REVENGE (COMPLETED)</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 15.jpg">
+      <div class="desc">TOP 10</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 13.jpg">
+      <div class="desc">hshs</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 5.jpg">
+      <div class="desc">Bahu yang sentiasa ada</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 6.jpg">
+      <div class="desc">AxB</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 20.jpg">
+      <div class="desc">Bisnes UnderWeight</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 19.jpg">
+      <div class="desc">4ever Crush</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 1.jpg">
+      <div class="desc">201 boys</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 2.jpg">
+      <div class="desc">Intern pon  berkawad</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 10.jpg">
+      <div class="desc">CEMBOI</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 16.jpg">
+      <div class="desc">One Piece References</div>
+    </div>
+    <div class="gallery">
+      <img src="SOURCE/GAMBAR 17.jpg">
+      <div class="desc">Until Tauliah <3</div>
+    </div>
+  </div>
+
+<!-- Gallery Section -->
+<div class="container">
+    <!-- Existing gallery code here -->
+</div>
+
+<!-- Video Section -->
+<div class="container">
+    <h2 style="text-align: center; margin: 20px 0; color: #2e86c1;">Video Section</h2>
+    <div class="video-section" style="text-align: center; margin: 20px 0;">
+        <video controls width="600" style="border: 5px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            <source src="VIDEOCODE/AGM.mp4" type="video/mp4">
+            <source src="VIDEOCODE/AGM.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 10px; color: #333;">My Komander Scene</p>
+    </div>
+</div>
+
+<div class="container">
+        <center><video controls width="600" style="border: 5px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            <source src="VIDEOCODE/classA.mp4" type="video/mp4">
+            <source src="VIDEOCODE/classA.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 10px; color: #333;">WITH CLASS A <3</p></center>
+    </div>
+</div>
+
+
+<div style="text-align: center; margin: 20px;">
+    <a href="#top" style="text-decoration: none; font-size: 16px; color: #2e86c1; font-weight: bold;">
+      &#8679; Back to Top
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    PRECIOUS MEMORY WITH PRECIOUS PEOPLE
+  </footer>
+
+</body>
+</html>
