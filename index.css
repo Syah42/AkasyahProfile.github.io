@@ -1,0 +1,279 @@
+<html>
+<head>
+  <title>index</title>
+   <style>
+    /* Video Background */
+    .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -20; /* Supaya berada di belakang semua elemen */
+        object-fit: cover; /* Supaya video memenuhi keseluruhan skrin */
+    }
+
+    /* Styling Umum */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        overflow: visible;
+    }
+
+    header {    
+        background-color: rgba(46, 64, 83); 
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    nav {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Navigation Link Styles */
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover Effect on Navigation Links */
+    nav a:hover {
+        color: #ff7f50; /* Change to an accent color on hover */
+        transform: scale(1.1); /* Slightly increase the size */
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.8); /* Latar belakang lut sinar */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .intro-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    /* Slideshow Styles */
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .mySlides {
+        display: none;
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        transform: translateY(-50%);
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: #555;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: rgba(51, 51, 51, 0.9);
+        color: white;
+        margin-top: 50px;
+    }
+
+    /* Clock Styling */
+    .clock {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        display: inline-block;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .social-icons img {
+        width: 50px; /* Set fixed width */
+        height: 50px; /* Set fixed height */
+        border-radius: 50%; /* Optional: make them circular */
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2); /* Enlarge the icon slightly */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add a glowing effect */
+    }
+  </style>
+</head>
+<body>
+
+    <video class="video-bg" autoplay muted loop>
+        <source src="VIDEOCODE/shadow.mp4" type="video/mp4">
+        <!-- Backup message -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <center><marquee width="100%" bgcolor="(46, 64, 83)">MUHAMMAD DANIAL AKASYAH</marquee>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="experience.html">Experience</a>
+        </nav>
+<!-- Clock -->
+        <div class="clock" id="clock"></div>
+    
+    </header>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div id="about" class="section">
+            <h2>Introduction</h2>
+            <div class="intro-container">
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="SOURCE/libk.jpg" alt="libk" style="width:108%">
+                        <div class="text">25 FEBRUARY 2024</div>
+                    </div>
+                    <div class="mySlides">
+                        <img src="SOURCE/tauliah.jpg" alt="tauliah" style="width:108%">
+                        <div class="text">7 MARCH 2024</div>
+                    </div>
+                    <div class="mySlides">
+                        <img src="SOURCE/nombor 3.jpg" alt="nombor 3" style="width:108%">
+                        <div class="text">15 MAY 2024</div>
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Introduction Text -->
+                <div>
+                    <p>Hello! My name is Akasyah. I am passionate about coding and multimedia. I specialize in CSS while for multimedia I have specialized in using Adobe Premiere Pro, Adobe Photoshop & Adobe Illustrator.</p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kasyaaaaaaaa_?igsh=cjE0YmNpaHM5NThh&utm_source=qr" target="_blank">
+                        <img src="SOURCE/IG.png" alt="Instagram Logo">
+                    </a>
+                    <a href="https://www.twitter.com/yourprofile" target="_blank">
+                        <img src="SOURCE/twitter.png" alt="Twitter Logo">
+                    </a>
+                    <a href="https://www.tiktok.com/@cyborg_san?_t=8rdZSvY1Eca&_r=1" target="_blank">
+                        <img src="SOURCE/tiktok.png" alt="TikTok Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:2022824054@student.uitm.edu.my">2022824054@student.uitm.edu.my</a></p>
+            <p>Phone: <a href="tel:+60177175722">+60177175722</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Akasyah's Portfolio</p>
+    </footer>
+
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+
+        showSlides(); // Start slideshow
+// Clock Function
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, "0");
+            var minutes = now.getMinutes().toString().padStart(2, "0");
+            var seconds = now.getSeconds().toString().padStart(2, "0");
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000); // Update the clock every second
+        updateClock(); // Initial call to display time immediately
+    
+    </script>
+</body>
+</html>
